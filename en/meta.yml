@@ -1,5 +1,5 @@
 ---
-title: explore-project-template
+title: AstroPath 1 - LED Message
 hero_image: images/banner.png
 description: explore-project-template description
 version: 4
@@ -8,9 +8,9 @@ copyedit: false
 last_tested: '2021-03-26'
 steps:
 - title: Introduction
-- title: Step title
-- title: Step title
-- title: Step title
+- title: Display text on your SenseHAT
+- title: Change the text speed
+- title: Change the text colour
 - title: Reflection
   knowledge_quiz:
     path: quiz1
