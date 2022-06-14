@@ -1,4 +1,4 @@
-## Change the text speed
+## Display scrolling text
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -9,6 +9,8 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 </div>
 </div>
 
+1. Display scrolling text
+1. Adjust speed of text
 --- task ---
 
 Another step of tasks to complete.

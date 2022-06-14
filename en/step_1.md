@@ -1,6 +1,6 @@
 ## Introduction
 
-In this project, you will investigate the LED array on your SenseHAT and use it to display scrolling text.
+In this project, you will investigate the LED array on your SenseHAT and use it to display characters and scrolling text.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 The <span style="color: #0faeb0">SenseHAT</span> is an add-on board designed by Raspberry Pi as an environmental sensor and display. There are currently two Raspberry Pi SenseHATs installed on the International Space Station, so that young people all over the world can run their code in space as part of the AstroPi programme!
