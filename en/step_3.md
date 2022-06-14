@@ -11,6 +11,7 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 
 1. Display scrolling text
 1. Adjust speed of text
+   
 --- task ---
 
 Another step of tasks to complete.
