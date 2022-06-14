@@ -10,7 +10,7 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 </div>
 
 1. Display single characters
-1. Change matrix rotation
+2. Change matrix rotation
 
 --- task ---
 
