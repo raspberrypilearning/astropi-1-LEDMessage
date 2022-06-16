@@ -8,6 +8,7 @@ The <span style="color: #0faeb0">SenseHAT</span> is an add-on board designed by 
 
 
 You will:
++ Display single characters on the LED array 
 + Display scrolling text on the LED array 
 + Change how fast the text moves
 + Change the colour of the text and background
