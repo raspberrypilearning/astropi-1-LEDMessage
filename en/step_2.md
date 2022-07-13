@@ -33,7 +33,7 @@ Open the [Trinket SenseHAT starter project](https://trinket.io/python/9214a6136b
 With any python program, we start by `importing` the libraries we need to make our code run. These are bits of code that allow the computer to understand what commands you are giving it. If we don't import the necessary libraries first, any commands we give the computer in our program won't be understood and we will see an error.
 
 --- task ---
-**Add:** At the top of your new code window add the following lines to `import` both the `sense_hat` library which we need to control the SenseHAT, and the `time` library which allows us to keep track of when parts of our program will run or stop: Both of these libraries are vital in using your SenseHAT. The final line of code sets up our program to call upon our imported SenseHat library whenever we type `sense`.
+**Add:** At the top of your new code window add the following lines: 
 
 --- code ---
 ---
@@ -49,9 +49,11 @@ from time import sleep
 sense = SenseHat()
 --- /code ---
 
+This will import both the `sense_hat` library which we need to control the SenseHAT, and the `time` library which allows us to keep track of when parts of our program will run or stop. The final line of code sets up our program to call upon our imported SenseHat library whenever we type `sense`.
+
 --- /task ---
 
-Now, we need to add some code that will show a single character on your SenseHAT's LED array. The example uses the character 'S', but you can use any letter (capital or lower-case) or symbol you like from the latin alphabet.
+Now, we need to add some code that will show a single character on your SenseHAT's LED array. The example uses the character `S`, but you can use any letter (capital or lower-case) or symbol you like from the latin alphabet.
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
 There are many alphabets in the world, though the most commonly used one is the <strong>latin alphabet</strong>: ABCDEFGHIJKLMNOPQRSTUVWXYZ. At the moment, the SenseHAT only supports latin characters and symbols (!?$%^&*><+-=./,'#) but support for both the <strong>greek</strong> and <strong>cyrillic</strong> alphabets is in development.
@@ -79,6 +81,8 @@ sense.show_letter("S")
 
 The final line calls the SenseHat library class `show_letter` and tells it you want to display a capital S.
 
+**Tip:** When using `show_letter` you can only supply a single character. Trying to add multiple characters inside the brackets will result in a `ValueError`. 
+
 --- /task ---
 
 --- task ---
@@ -87,20 +91,38 @@ The final line calls the SenseHat library class `show_letter` and tells it you w
 
 --- /task ---
 
---- collapse ---
----
-title: My letter isn't showing
----
+--- task ---
 
-**Check:**
+**Debug:**
 + What does your error message say? Which line has an error?
 + Does your code match the code above?
-+ Is your letter inside quotation marks on the last line?
+
+--- collapse ---
+---
+title: NameError
+---
 + Have you got the capital letters and brackets correct in `SenseHat()` on line 4 and line 1?
++ Are you using `sense.show_letter`?
++ Is your letter inside quotation marks on the last line?
+
 
 --- /collapse ---
 
+--- collapse ---
+---
+title: ValueError
+---
++ Are you trying to show more than one character at a time?
++ Are you using latin characters?
+
+--- /collapse ---
+
++ `ValueError`: 
+
+--- /task ---
+
 To spell a word, you need to display a series of letters in sequence.
+
 --- task ---
 
 **Choose:** What word would you like to display on your SenseHAT?
