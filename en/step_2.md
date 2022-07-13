@@ -117,8 +117,6 @@ title: ValueError
 
 --- /collapse ---
 
-+ `ValueError`: 
-
 --- /task ---
 
 To spell a word, you need to display a series of letters in sequence.
@@ -223,33 +221,65 @@ sense.clear()
 
 --- /task ---
 
-You are also able to set the 'top' of the text display to be any of the four sides of the array, in case you need to mount it at an angle.
+You are also able to set the 'top' of the text display to be any of the four sides of the array, in case you need to mount it at an angle. 
 
 [[[rpi-sensehat-rotate-led]]]
 
 
 --- task ---
 
-**Type:** On line 5 in your code, add:
-
+**Type:** On line 5 in your code, add `sense.set_rotation(180)`:
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1 
-line_highlights: 
+line_highlights: 5
 ---
 from sense_hat import SenseHat
 from time import sleep
 
 sense = SenseHat()
-
+sense.set_rotation(180)
 
 sense.show_letter("S")
 sleep(0.2)
 
 --- /code ---
+
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your code. The SenseHAT should display your text inverted.
+
+--- /task ---
+
+--- task ---
+
+**Try:** Change the number from `180` to `90` or `270` and Run your code. 
+
+What number do you need to use to show it the right way up? 
+
+--- /task ---
+
+--- task ---
+
+**Debug:**
++ What does your error message say? Which line has an error?
++ Does your code match the code above?
+ 
+--- collapse ---
+---
+title: ValueError
+---
+You can only use the values `90`, `180` and `270` in your rotation angle. 
+
+--- /collapse ---
+
+
 
 --- /task ---
 
