@@ -10,7 +10,7 @@ If you don't have access to a real Sense HAT, you can use the online Trinket emu
 
 </div>
 <div>
-<iframe src="https://trinket.io/embed/python/30c415346f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python/30c415346f?outputOnly=true&runOption=run&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 </div>
 
