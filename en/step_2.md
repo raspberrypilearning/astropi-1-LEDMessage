@@ -56,7 +56,7 @@ This will import both the `sense_hat` library which we need to control the Sense
 Now, we need to add some code that will show a single character on your SenseHAT's LED array. The example uses the character `S`, but you can use any letter (capital or lower-case) or symbol you like from the latin alphabet.
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-There are many alphabets in the world, though the most commonly used one is the <strong>latin alphabet</strong>: ABCDEFGHIJKLMNOPQRSTUVWXYZ. At the moment, the SenseHAT only supports latin characters and symbols (!?$%^&*><+-=./,'#) but support for both the <strong>greek</strong> and <strong>cyrillic</strong> alphabets is in development.
+There are many alphabets in the world, though the most commonly used one is the <strong>latin alphabet</strong>: ABCDEFGHIJKLMNOPQRSTUVWXYZ. At the moment, the SenseHAT only supports latin characters and symbols (!?$%^&*]>@\:;~[<+-=./,'#) but support for both the <strong>greek</strong> and <strong>cyrillic</strong> alphabets is in development.
 </p>
 
 --- task ---
@@ -159,6 +159,8 @@ sense.show_letter("e")
 
 The number used in the brackets after `sleep` determines how long your letter will show for in seconds. The example uses half a second, but you can make it faster or slower by changing this value down or up. 
 
+[[[generic-python-sleep]]]
+
 --- /task ---
 
 --- task ---
@@ -195,6 +197,56 @@ sleep(0.2)
 sense.show_letter("T")
 sleep(0.2)
 sense.show_letter("!")
+sleep(0.2)
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Type:** Add `sense.clear()` at the end of your code to clear the LED matrix:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 22 
+line_highlights: 24
+---
+sense.show_letter("!")
+sleep(0.2)
+sense.clear()
+
+--- /code ---
+
+--- /task ---
+
+You are also able to set the 'top' of the text display to be any of the four sides of the array, in case you need to mount it at an angle.
+
+[[[rpi-sensehat-rotate-led]]]
+
+
+--- task ---
+
+**Type:** On line 5 in your code, add:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1 
+line_highlights: 
+---
+from sense_hat import SenseHat
+from time import sleep
+
+sense = SenseHat()
+
+
+sense.show_letter("S")
 sleep(0.2)
 
 --- /code ---
