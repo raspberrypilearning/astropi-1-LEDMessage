@@ -59,7 +59,7 @@ There are many alphabets in the world, though the most commonly used one is the 
 
 --- task ---
 
-**Add:** Leave a blank line under your current code, and add the final line shown here. :
+**Type:** Leave a blank line under your current code, and add the final line shown here:
 
 --- code ---
 ---
@@ -77,6 +77,105 @@ sense = SenseHat()
 sense.show_letter("S")
 --- /code ---
 
+The final line calls the SenseHat library class `show_letter` and tells it you want to display a capital S.
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your code. You should see your letter appear on the SenseHAT array.
+
+--- /task ---
+
+--- collapse ---
+---
+title: My letter isn't showing
+---
+
+**Check:**
++ What does your error message say? Which line has an error?
++ Does your code match the code above?
++ Is your letter inside quotation marks on the last line?
++ Have you got the capital letters and brackets correct in `SenseHat()` on line 4 and line 1?
+
+--- /collapse ---
+
+To spell a word, you need to display a series of letters in sequence.
+--- task ---
+
+**Choose:** What word would you like to display on your SenseHAT?
+
+--- /task ---
+ 
+--- task ---
+
+**Type:** At the bottom of your code, add two more lines. One which sets a gap of time in seconds, and another to display the  second letter of your word. 
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 7-8
+---
+from sense_hat import SenseHat
+from time import sleep
+
+sense = SenseHat()
+
+sense.show_letter("S")
+sleep(0.5)
+sense.show_letter("e")
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your code. You should see your letter change after an interval. 
+
+The number used in the brackets after `sleep` determines how long your letter will show for in seconds. The example uses half a second, but you can make it faster or slower by changing this value down or up. 
+
+--- /task ---
+
+--- task ---
+
+**Type:** Continue spelling your word one letter at a time until you have finished. 
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1 
+line_highlights: 
+---
+from sense_hat import SenseHat
+from time import sleep
+
+sense = SenseHat()
+
+sense.show_letter("S")
+sleep(0.2)
+sense.show_letter("e")
+sleep(0.2)
+sense.show_letter("n")
+sleep(0.2)
+sense.show_letter("s")
+sleep(0.2)
+sense.show_letter("e")
+sleep(0.2)
+sense.show_letter("H")
+sleep(0.2)
+sense.show_letter("A")
+sleep(0.2)
+sense.show_letter("T")
+sleep(0.2)
+sense.show_letter("!")
+sleep(0.2)
+
+--- /code ---
 
 --- /task ---
 
