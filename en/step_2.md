@@ -9,9 +9,9 @@ If you don't have access to a real Sense HAT, you can use the online Trinket emu
 [[[rpi-sensehat-emulator]]]
 
 </div>
+</div>
 <div>
 <iframe src="https://trinket.io/embed/python/30c415346f?outputOnly=true&runOption=run&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-</div>
 </div>
 
 The Sense HAT is an add-on board for the Raspberry Pi, made especially for the [Astro Pi](http://astro-pi.org/){:target="_blank"} competition. The board allows you to make measurements of temperature, humidity, pressure, and orientation, and to output information using its built-in LED matrix.
