@@ -14,7 +14,7 @@ If you don't have access to a real Sense HAT, you can use the online Trinket emu
 <iframe src="https://trinket.io/embed/python/30c415346f?outputOnly=true&runOption=run&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
-The Sense HAT is an add-on board for the Raspberry Pi, made especially for the [Astro Pi](http://astro-pi.org/){:target="_blank"} competition. The board allows you to make measurements of temperature, humidity, pressure, and orientation, and to output information using its built-in LED matrix.
+The Sense HAT is an add-on board for the Raspberry Pi, made especially for the [Astro Pi](http://astro-pi.org/){:target="_blank"} competition. The board allows you to make measurements of temperature, humidity, ambient light and colour, pressure and orientation, and to output information using its built-in LED matrix.
 
 ![Sense HAT](images/sense-hat.png)
 
@@ -23,9 +23,6 @@ The Sense HAT is an add-on board for the Raspberry Pi, made especially for the [
 The LED matrix on the SenseHAT is made of an 8 by 8 grid of RGB LEDs. Using python, you can control the LEDs to be any colour you like! 
 
 Part of the `sense_hat` library allows you to show single characters on the LED array: `show_letter`. 
-
-1. Display single characters
-2. Change matrix rotation
 
 --- task ---
 
@@ -54,11 +51,15 @@ sense = SenseHat()
 
 --- /task ---
 
-Now, we need to add some code that will show a single character on your SenseHAT's LED array. 
+Now, we need to add some code that will show a single character on your SenseHAT's LED array. The example uses the character 'S', but you can use any letter (capital or lower-case) or symbol you like from the latin alphabet.
+
+<p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
+There are many alphabets in the world, though the most commonly used one is the <strong>latin alphabet</strong>: ABCDEFGHIJKLMNOPQRSTUVWXYZ. At the moment, the SenseHAT only supports latin characters and symbols (!?$%^&*><+-=./,'#) but support for both the <strong>greek</strong> and <strong>cyrillic</strong> alphabets is in development.
+</p>
 
 --- task ---
 
-**Add:** Leave a blank line under your current code, and add the final line shown here. I have used the character 'S', but you can use any letter you like:
+**Add:** Leave a blank line under your current code, and add the final line shown here. :
 
 --- code ---
 ---
