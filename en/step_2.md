@@ -229,6 +229,7 @@ You are also able to set the 'top' of the text display to be any of the four sid
 --- task ---
 
 **Type:** On line 5 in your code, add `sense.set_rotation(180)`:
+
 --- code ---
 ---
 language: python
@@ -279,9 +280,6 @@ You can only use the values `90`, `180` and `270` in your rotation angle.
 
 --- /collapse ---
 
-
-
 --- /task ---
-
 
 --- save ---
