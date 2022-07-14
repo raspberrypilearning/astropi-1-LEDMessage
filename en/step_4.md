@@ -14,17 +14,14 @@ So far, you have only accessed the default settings for the 64 RGB (Red, Green, 
 
 [[[generic-theory-colours]]]
 
-We can change how the message is displayed on the SenseHAT by adding some extra **parameters** to the `show_message` command.
+We can change how the message is displayed on the SenseHAT by adding some extra **parameters** to the `show_message` command:
 
-You have already used `scroll_speed` - this affects how quickly the text moves across the display. The default value is `0.1`. The bigger the number, the lower the speed. This parameter **only** works with the `show_message` command.
++ You have already used `scroll_speed`: this affects how quickly the text moves across the display. The default value is `0.1`. The bigger the number, the lower the speed. This parameter **only** works with the `show_message` command.
 
 + `text_colour` changes the colour of the characters and is defined via three values to specify red, green, and blue. These are also called RGB values. This parameter will change the output of both `show_message` and `show_letter`.
 
 + `back_colour`: changes the colour of the background and works in the same way as `text_colour`. This parameter will change the output of both `show_message` and `show_letter`.
 
-Check out the sections below to learn more about RGB values.
-
-[[[rpi-sensehat-display-colour]]]
 
 --- task ---
 
