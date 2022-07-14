@@ -129,6 +129,6 @@ title: TypeError
 
 --- /task ---
 
-In the next step we are going to change the colours of our text and background!
+In the next step you are going to change the colours of the SenseHAT's text and background!
 
 --- save ---
