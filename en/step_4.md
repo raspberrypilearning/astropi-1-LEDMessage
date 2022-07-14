@@ -10,7 +10,7 @@ In this step, you will learn how to choose colours with RGB LEDs and change the 
 
 </div>
 
-SO far, you have only accessed the default settings for the 64 RGB (Red, Green, Blue) LED bulbs on the SenseHAT - but they can be any colour you like!
+So far, you have only accessed the default settings for the 64 RGB (Red, Green, Blue) LED bulbs on the SenseHAT - but they can be any colour you like!
 
 [[[generic-theory-colours]]]
 
@@ -96,6 +96,7 @@ title: ValueError
 
 
 --- /collapse ---
+
 --- /task ---
 
 --- save ---
