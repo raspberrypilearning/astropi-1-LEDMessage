@@ -10,7 +10,7 @@ If you have time, why not upgrade your project by making it more exciting?
 
 --- task ---
 
-You could go over your project and:
+You could:
 + change the background and text colours of the single characters in your program
 + change the rotation of the letters and scrolling message
 + Add more scrolling messages and characters
