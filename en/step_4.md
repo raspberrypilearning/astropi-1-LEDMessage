@@ -25,7 +25,8 @@ We can change how the message is displayed on the SenseHAT by adding some extra 
 
 --- task ---
 
-**Type:** Add the following to your code <strong>inside the brackets</strong>: `, text_colour=(255,0,0), back_colour=(0,0,255)`. The examples use **red**:`(255,0,0)` and **blue**:`(0,0,255)`. 
+**Type:** Add the following to your code <strong>inside the brackets</strong>: 
+`, text_colour=(255,0,0), back_colour=(0,0,255)`. The examples use **red**:`(255,0,0)` and **blue**:`(0,0,255)`. 
 
 **Tip:** You can choose any colour you like by changing the numbers in the brackets between 0 and 255 - numbers higher than this will return an error.
 
