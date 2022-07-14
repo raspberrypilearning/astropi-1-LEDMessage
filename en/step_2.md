@@ -282,4 +282,6 @@ You can only use the values `90`, `180` and `270` in your rotation angle.
 
 --- /task ---
 
+In the next step, you will display a scrolling message!
+
 --- save ---
