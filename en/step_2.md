@@ -4,10 +4,6 @@
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 In this step you will connect you SenseHAT to your Raspberry Pi, and show single characters on the SenseHAT LED array in different rotations. 
 
-If you don't have access to a real Sense HAT, you can use the online Trinket emulator:
-
-[[[rpi-sensehat-emulator]]]
-
 </div>
 </div>
 <div>
@@ -19,6 +15,11 @@ The Sense HAT is an add-on board for the Raspberry Pi, made especially for the [
 ![Sense HAT](images/sense-hat.png)
 
 [[[rpi-sensehat-attach]]]
+
+If you don't have access to a real Sense HAT, you can use the online Trinket emulator:
+
+[[[rpi-sensehat-emulator]]]
+
 
 The LED matrix on the SenseHAT is made of an 8 by 8 grid of RGB LEDs. Using python, you can control the LEDs to be any colour you like! 
 
