@@ -12,7 +12,7 @@ In this step, you will learn how to choose colours with RGB LEDs and change the 
 
 So far, you have only accessed the default settings for the 64 RGB (Red, Green, Blue) LED bulbs on the SenseHAT - but they can be any colour you like!
 
-[[[generic-theory-colours]]]
+
 
 We can change how the message is displayed on the SenseHAT by adding some extra **parameters** to the `show_message` command:
 
@@ -25,9 +25,11 @@ We can change how the message is displayed on the SenseHAT by adding some extra 
 
 --- task ---
 
-**Type:** Add the following to your code <strong>inside the brackets</strong>: `, text_colour=(255,0,0), back_colour=(0,0,255)`. The examples use **red**:`(255,0,0)` and **blue**:`(0,0,255)` but you can choose any colours you like. 
+**Type:** Add the following to your code <strong>inside the brackets</strong>: `, text_colour=(255,0,0), back_colour=(0,0,255)`. The examples use **red**:`(255,0,0)` and **blue**:`(0,0,255)`. 
 
-**Tip:** The comma at the beginning is important as it shows where the two parameters are split - don't forget it!
+**Tip:** You can choose any colour you like by changing the numbers in the brackets between 0 and 255 - numbers higher than this will return an error.
+
+**Tip:** The comma at the beginning is important as it shows where the new parameters are split - don't forget it!
 
 --- code ---
 ---
@@ -95,5 +97,14 @@ title: ValueError
 --- /collapse ---
 
 --- /task ---
+
+--- task ---
+
+**Try:** Change the numbers in your colour values between 0 and 255 and run your code. You should see the colours change. 
+
+[[[generic-theory-colours]]]
+
+--- /task ---
+
 
 --- save ---
