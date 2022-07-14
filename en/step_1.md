@@ -21,7 +21,7 @@ You will:
 This project shows both ways text can be displayed on the SenseHAT LED array - as single characters, or scrolling text. 
 </div>
 <div class="scratch-preview" style="margin-left: 15px;">
-  <iframe src="https://trinket.io/embed/python/d1d656b7f5?outputOnly=true&runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  <iframe src="https://trinket.io/embed/python/43a4156e2d?outputOnly=true&runOption=run&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 </div>
 --- /task ---
