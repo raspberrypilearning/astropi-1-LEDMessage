@@ -50,6 +50,8 @@ from sense_hat import SenseHat
 from time import sleep
 --- /code ---
 
+--- /task ---
+
 --- task ---
 
 Then set up the Sense HAT so that it can be controlled.
@@ -70,8 +72,6 @@ from time import sleep
 #Set up the SenseHat
 sense = SenseHat()
 --- /code ---
-
---- /task ---
 
 --- /task ---
 
