@@ -9,7 +9,7 @@ last_tested: '2021-03-26'
 steps:
 - title: Introduction
 - title: Display single characters
-- title: Display scrolling text
+- title: Scroll text
 - title: Change the colours
 - title: Reflection
   knowledge_quiz:
