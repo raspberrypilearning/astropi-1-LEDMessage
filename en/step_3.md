@@ -26,6 +26,7 @@ A <strong>string</strong> is a datatype made up of a series of characters. That 
 --- task ---
 
 **Type:** At the bottom of your script, add the following line. The example uses the string `SenseHAT is awesome!`, but you can change it to anything you like
+
 --- code ---
 ---
 language: python
@@ -36,7 +37,6 @@ line_highlights: 26
 ---
 #Scroll text on the LED matrix
 sense.show_message("SenseHAT is Awesome!")
-
 --- /code ---
 
 --- /task ---
@@ -71,7 +71,7 @@ You are able to make the scrolling message move more quickly or slowly across th
 
 --- task ---
 
-**Type:** Add the following to your code <strong>inside the brackets</strong>: `, scroll_speed=0.05'.
+**Type:** Add the following to your code <strong>inside the brackets</strong>:` , scroll_speed=0.05`.
 
 **Tip:** The comma at the beginning is important as it shows where the two arguments are split - don't forget it!
 
@@ -85,7 +85,6 @@ line_highlights: 26
 ---
 #Scroll text on the LED matrix
 sense.show_message("SenseHAT is Awesome!", scroll_speed=0.05)
-
 --- /code ---
 
 --- /task ---
