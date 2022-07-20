@@ -1,20 +1,21 @@
-## Display scrolling text
+## Scroll text
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step you will create a scrolling text message and change the speed at which it displays.
+In this step you will create a text message that will scroll across the LED matrix and change the speed it moves.
 </div>
 
 </div>
 <div>
-<iframe src="https://trinket.io/embed/python/d53561c752?outputOnly=true&runOption=run&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></iframe>
+
+<iframe src="https://trinket.io/embed/python/4302ed5794" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
-The SenseHAT can also scroll a series of characters stored in a <strong>string</strong> across the LED matrix in multiple orientations. 
+The SenseHAT can scroll a series of characters stored in a <strong>string</strong> across the LED matrix in any orientation. 
 
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-A <strong>string</strong> is a datatype made up of a series of characters that is interpreted literally by the computer. That means, the computer recognises the series of characters <strong>exactly as they are typed</strong>. We designate strings in python using quotation marks: `"[string]"`
+A <strong>string</strong> is a datatype made up of a series of characters. That means, the computer recognises the series of characters <strong>exactly as they are typed</strong>. Strings in python using quotation marks like this -  `"Hello reader"`
 </p>
 
 --- task ---
@@ -35,8 +36,7 @@ line_numbers: true
 line_number_start: 25
 line_highlights: 27
 ---
-sense.clear()
-
+#Scroll text on the LED matrix
 sense.show_message("SenseHAT is Awesome!")
 
 --- /code ---
@@ -59,9 +59,10 @@ sense.show_message("SenseHAT is Awesome!")
 ---
 title: SyntaxError
 ---
-+ Is your message enclosed in quotation marks? `"[string]"`
++ Is your message enclosed in quotation marks? `"Hello reader"`
 
 --- /collapse ---
+
 --- /task ---
 
 You are able to make the scrolling message move more quickly or slowly across the screen by changing the `scroll speed` parameter down or up.
@@ -84,15 +85,14 @@ line_numbers: true
 line_number_start: 25
 line_highlights: 27
 ---
-sense.clear()
-
+#Scroll text on the LED matrix
 sense.show_message("SenseHAT is Awesome!", scroll_speed=0.05)
 
 --- /code ---
 
 --- /task ---
 
-The speed of the message can be controlled by changing the number up or down - the larger the number, the slower your message will move. 
+The speed of the message can be controlled by changing the number - the larger the number, the slower your message will move. 
 
 --- task ---
 

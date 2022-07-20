@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step you will connect you SenseHAT to your Raspberry Pi, and show single characters on the SenseHAT LED array in different rotations. 
+In this step you will show single characters on the SenseHAT LED array in different rotations. Additionally, if you have a physical Sense HAT and Raspberry Pi, you will learn how to connect the two.
 
 </div>
 </div>
@@ -14,24 +14,25 @@ The Sense HAT is an add-on board for the Raspberry Pi, made especially for the [
 
 ![Sense HAT](images/sense-hat.png)
 
-[[[rpi-sensehat-attach]]]
-
-If you don't have access to a real Sense HAT, you can use the online Trinket emulator:
+You can program the Sense HAT using an online emulator.
 
 [[[rpi-sensehat-emulator]]]
 
+If you have access to a real Sense HAT you can attach it to your Raspberry Pi, using the instructions below.
+
+[[[rpi-sensehat-attach]]]
 
 The LED matrix on the SenseHAT is made of an 8 by 8 grid of RGB LEDs. Using python, you can control the LEDs to be any colour you like! 
 
-Part of the `sense_hat` library allows you to show single characters on the LED array: `show_letter`. 
+Part of the `sense_hat` library allows you to show single characters on the LED array using `show_letter`. 
 
 --- task ---
 
-Open the [Trinket SenseHAT starter project](https://trinket.io/python/9214a6136b?showInstructions=true){:target="_blank"}. Trinket will open in another browser tab.
+Open the [Trinket SenseHAT starter project](https://trinket.io/python/2064060101){:target="_blank"}. Trinket will open in another browser tab.
 
 --- /task ---
 
-With any python program, we start by `importing` the libraries we need to make our code run. These are bits of code that allow the computer to understand what commands you are giving it. If we don't import the necessary libraries first, any commands we give the computer in our program won't be understood and we will see an error.
+With any python program, we start by `importing` the libraries we need. In this project you need `sense_hat` library which to control the SenseHAT, and the `time` library which allows you to pause your program.
 
 --- task ---
 **Add:** At the top of your new code window add the following lines: 
@@ -42,15 +43,35 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 1-4
+line_highlights: 2-3
 ---
+#Import the libraries
+from sense_hat import SenseHat
+from time import sleep
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Then set up the Sense HAT so that it can be controlled.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 7
+---
+#Import the libraries
 from sense_hat import SenseHat
 from time import sleep
 
+
+#Set up the SenseHat
 sense = SenseHat()
 --- /code ---
-
-This will import both the `sense_hat` library which we need to control the SenseHAT, and the `time` library which allows us to keep track of when parts of our program will run or stop. The final line of code sets up our program to call upon our imported SenseHat library whenever we type `sense`.
 
 --- /task ---
 
@@ -62,7 +83,7 @@ There are many alphabets in the world, though the most commonly used one is the 
 
 --- task ---
 
-**Type:** Leave a blank line under your current code, and add the final line shown here:
+Add code to output a single character to the LED matrix.
 
 --- code ---
 ---
@@ -70,13 +91,18 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1 
-line_highlights: 6
+line_highlights: 11
 ---
+#Import the libraries
 from sense_hat import SenseHat
 from time import sleep
 
+
+#Set up the SenseHat
 sense = SenseHat()
 
+
+#Show letters on the LED matrix
 sense.show_letter("S")
 --- /code ---
 
@@ -102,7 +128,7 @@ The final line calls the SenseHat library class `show_letter` and tells it you w
 ---
 title: NameError
 ---
-+ Have you got the capital letters and brackets correct in `SenseHat()` on line 4 and line 1?
++ Have you got the capital letters and brackets correct in `SenseHat()` on line 7 and line 2?
 + Are you using `sense.show_letter`?
 + Is your letter inside quotation marks on the last line?
 
@@ -126,11 +152,7 @@ To spell a word, you need to display a series of letters in sequence.
 
 **Choose:** What word would you like to display on your SenseHAT?
 
---- /task ---
- 
---- task ---
-
-**Type:** At the bottom of your code, add two more lines. One which sets a gap of time in seconds, and another to display the  second letter of your word. 
+**Type:** At the bottom of your code, add two more lines. One which sets a time in seconds for the letter to be shown, and another to display the  second letter of your word. 
 
 --- code ---
 ---
@@ -138,13 +160,18 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 7-8
+line_highlights: 12-13
 ---
+#Import the libraries
 from sense_hat import SenseHat
 from time import sleep
 
+
+#Set up the SenseHat
 sense = SenseHat()
 
+
+#Show letters on the LED matrix
 sense.show_letter("S")
 sleep(0.5)
 sense.show_letter("e")
@@ -154,7 +181,7 @@ sense.show_letter("e")
 
 --- task ---
 
-**Test:** Run your code. You should see your letter change after an interval. 
+**Test:** Run your code. You should see your letter change after half a second.
 
 The number used in the brackets after `sleep` determines how long your letter will show for in seconds. The example uses half a second, but you can make it faster or slower by changing this value down or up. 
 
@@ -172,32 +199,36 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1 
-line_highlights: 
+line_highlights: 14-28
 ---
+#Import the libraries
 from sense_hat import SenseHat
 from time import sleep
 
+
+#Set up the SenseHat
 sense = SenseHat()
 
-sense.show_letter("S")
-sleep(0.2)
-sense.show_letter("e")
-sleep(0.2)
-sense.show_letter("n")
-sleep(0.2)
-sense.show_letter("s")
-sleep(0.2)
-sense.show_letter("e")
-sleep(0.2)
-sense.show_letter("H")
-sleep(0.2)
-sense.show_letter("A")
-sleep(0.2)
-sense.show_letter("T")
-sleep(0.2)
-sense.show_letter("!")
-sleep(0.2)
 
+#Show letters on the LED matrix
+sense.show_letter("S")
+sleep(0.5)
+sense.show_letter("e")
+sleep(0.5)
+sense.show_letter("n")
+sleep(0.5)
+sense.show_letter("s")
+sleep(0.5)
+sense.show_letter("e")
+sleep(0.5)
+sense.show_letter("H")
+sleep(0.5)
+sense.show_letter("A")
+sleep(0.5)
+sense.show_letter("T")
+sleep(0.5)
+sense.show_letter("!")
+sleep(0.5)
 --- /code ---
 
 --- /task ---
@@ -211,18 +242,21 @@ sleep(0.2)
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 22 
-line_highlights: 24
+line_number_start: 27 
+line_highlights: 32
 ---
 sense.show_letter("!")
-sleep(0.2)
+sleep(0.5)
+
+
+#Clear the LED matirx
 sense.clear()
 
 --- /code ---
 
 --- /task ---
 
-You are also able to set the 'top' of the text display to be any of the four sides of the array, in case you need to mount it at an angle. 
+You can rotate the LED matrix, so that it doesn't matter which way is up.
 
 [[[rpi-sensehat-rotate-led]]]
 
@@ -236,26 +270,19 @@ You are also able to set the 'top' of the text display to be any of the four sid
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 1 
-line_highlights: 5
+line_number_start: 5
+line_highlights: 6
 ---
-from sense_hat import SenseHat
-from time import sleep
-
+#Set up the SenseHat
 sense = SenseHat()
 sense.set_rotation(180)
-
-sense.show_letter("S")
-sleep(0.2)
-
 --- /code ---
-
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code. The SenseHAT should display your text inverted.
+**Test:** Run your code. The SenseHAT should display your text upside down.
 
 --- /task ---
 
