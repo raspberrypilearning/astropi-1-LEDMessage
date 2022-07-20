@@ -15,9 +15,9 @@ Which of the following arguments would produce **green** text on the Sense HAT L
 text_colour=(255,0,0)
 ```
 
-  --- feedback ---
-  This would produce **red** text
-  --- /feedback ---
+--- feedback ---
+This would produce **red** text
+--- /feedback ---
 
 - (x) 
 
@@ -25,21 +25,19 @@ text_colour=(255,0,0)
 text_colour=(0,255,0)
 ```
 
-  --- feedback ---
-  Yes, this would produce **green** text
-  --- /feedback ---
+--- feedback ---
+Yes, this would produce **green** text
+--- /feedback ---
 
-- (x) 
+- ( ) 
 
 ```python
 text_colour=(0,0,255)
 ```
 
-  --- feedback ---
-  This would produce **blue** text
-  --- /feedback ---
-
-- ( ) 
+--- feedback ---
+This would produce **blue** text
+--- /feedback ---
 
 --- /choices ---
 
