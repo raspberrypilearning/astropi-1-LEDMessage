@@ -19,27 +19,27 @@ sense.show_message("SenseHAT is Awesome!" scroll_speed=0.05)
 
 - (x) 
 There is a missing comma (`,`) between the text and the scroll_speed.
-  --- feedback ---
+--- feedback ---
 That is correct. Commas are needed to seperate different arguments.
-  --- /feedback ---
+--- /feedback ---
 
 - ( ) 
 The `time` library has not been imported.
-  --- feedback ---
+--- feedback ---
 The `sense_hat` library does not need the `time` library to control `scroll_speed`
-  --- /feedback ---
+--- /feedback ---
 
 - ( ) 
 You can't use exclamation marks (`!`) in strings.
-  --- feedback ---
+--- feedback ---
 The `sense_hat` library supports all the latin alphabet and punctuation marks
-  --- /feedback ---
+--- /feedback ---
 
 - ( ) 
 The `scroll_speed` needs to be greater than `1`
-  --- feedback ---
+--- feedback ---
 The `sense_hat` library is capable of outputing texts at scroll speeds less than `1`
-  --- /feedback ---
+--- /feedback ---
 
 --- /choices ---
 
