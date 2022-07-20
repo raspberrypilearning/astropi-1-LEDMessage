@@ -98,7 +98,7 @@ title: ValueError
 
 **Try:** Change the numbers in your colour values between 0 and 255 and run your code. You should see the colours change. 
 
-[[[generic-theory-colours]]]
+[[[generic-theory-simple-colours]]]
 
 --- /task ---
 
