@@ -19,13 +19,13 @@ Which of the following would spell out `RPI` with a 2 second delay between each 
 --- choices ---
 
 - ( )
-
+```python
 sense.show_letter("R")
 sleep(0.2)
 sense.show_letter("P")
 sleep(0.2)
 sense.show_letter("I")
-
+```
   --- feedback ---
 Those are the correct characters, but the delay between them is too short.
   --- /feedback ---
@@ -40,25 +40,25 @@ sleep(2)
   --- /feedback ---
 
 - (x) 
-
+```python
 sense.show_letter("R")
 sleep(2)
 sense.show_letter("P")
 sleep(2)
 sense.show_letter("I")
-
+```
   --- feedback ---
 Well done, that is the correct answer
   --- /feedback ---
 
 - ( ) 
-
+```python
 sense.show_letter("r")
 sleep(2)
 sense.show_letter("p")
 sleep(2)
 sense.show_letter("i")
-
+```
   --- feedback ---
 The delay is correct, but the characters are all lowercase, rather than upper case.
   --- /feedback ---
