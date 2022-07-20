@@ -32,7 +32,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 25
-line_highlights: 27
+line_highlights: 26
 ---
 #Scroll text on the LED matrix
 sense.show_message("SenseHAT is Awesome!")
@@ -81,7 +81,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 25
-line_highlights: 27
+line_highlights: 26
 ---
 #Scroll text on the LED matrix
 sense.show_message("SenseHAT is Awesome!", scroll_speed=0.05)
