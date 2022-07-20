@@ -31,10 +31,10 @@ Those are the correct characters, but the delay between them is too short.
   --- /feedback ---
 
 - ( )
-
+```python
 sense.show_letter("RPI")
 sleep(2)
-
+```
   --- feedback ---
 `show_letter` can only display a single character at a time.
   --- /feedback ---
@@ -60,7 +60,7 @@ sleep(2)
 sense.show_letter("i")
 ```
   --- feedback ---
-The delay is correct, but the characters are all lowercase, rather than upper case.
+The delay is correct, but the characters are all lowercase, rather than uppercase.
   --- /feedback ---
 
 --- /choices ---
